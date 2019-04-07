@@ -3,18 +3,27 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sk</groupId>
-  <artifactId>springcore_app1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>score</artifactId>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>springcore_app1</name>
+  <name>score</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
 
   <dependencies>
+  
+  	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>5.1.6.RELEASE</version>
+	</dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
