@@ -25,8 +25,22 @@
  		class="com.sk.springcore_app1.TrackCoach">	 		
  	</bean> -->
  	
- 	<bean id="myCoach"
+ 	<!-- <bean id="myCoach"
  		class="com.sk.springcore_app1.BaseballCoach">	 		
+ 	</bean> -->
+ 	
+ 	<bean id="myFortune" 
+ 		class="com.sk.springcore_app1.HappyFortuneService">
+ 	</bean>
+ 	
+ 	<bean id="myDailyFortune" 
+ 		class="com.sk.springcore_app1.DailyFortuneService">
+ 	</bean>
+ 	
+ 	<bean id="myCoach"
+ 		class="com.sk.springcore_app1.VolleyBallCoach">	
+ 		<!-- setup constructor injection -->
+ 		<constructor-arg ref="myDailyFortune"/> 		
  	</bean>
 
 </beans>
