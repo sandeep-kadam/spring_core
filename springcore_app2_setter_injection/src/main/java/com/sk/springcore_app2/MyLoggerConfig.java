@@ -1,4 +1,4 @@
-package com.sk.springcore_app1;
+package com.sk.springcore_app2;
 
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;

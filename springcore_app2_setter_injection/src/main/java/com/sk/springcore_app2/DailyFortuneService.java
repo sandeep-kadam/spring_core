@@ -1,4 +1,4 @@
-package com.sk.springcore_app1;
+package com.sk.springcore_app2;
 
 public class DailyFortuneService implements FortuneService {
 

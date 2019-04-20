@@ -1,4 +1,4 @@
-package com.sk.springcore_app1;
+package com.sk.springcore_app2;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,12 +10,14 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
+import com.sk.springcore_app2.DailyFortuneService;
+
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class VolleyBallCoachTest {
 
 	
-	VolleyBallCoach classInstanceForTestingMethodInIt;
+	BaseballCoach classInstanceForTestingMethodInIt;
 	
 	@BeforeAll
 	void beforeAllInit() {
@@ -24,7 +26,7 @@ class VolleyBallCoachTest {
 	@BeforeEach
 	void init() {
 		System.out.println("initialize Test class for every Test case");
-		classInstanceForTestingMethodInIt = new VolleyBallCoach(new DailyFortuneService());
+		classInstanceForTestingMethodInIt = new BaseballCoach(new DailyFortuneService());
 	}
 	
 	@AfterEach
