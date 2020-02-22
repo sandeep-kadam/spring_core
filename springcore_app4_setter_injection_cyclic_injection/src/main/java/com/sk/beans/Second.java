@@ -6,6 +6,7 @@ public class Second {
 	private First firstClassObj;
 	
 	public Second(First firstObj) {
+		System.out.println("inside second constructor");
 		firstClassObj = firstObj;
 	}
 	

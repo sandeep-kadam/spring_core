@@ -26,6 +26,6 @@
 	</bean>
 	
 	<bean id="bank" class="com.sk.springcore_app.BankApproval">
-		<property name="loanApproveImpl" ref="loan"></property>
+		<property name="loanApproveImpl" ref="ploan"></property>
 	</bean>
 </beans>

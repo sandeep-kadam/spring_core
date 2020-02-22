@@ -9,14 +9,19 @@ public class ServiceConfig {
 
 	//define bean for our HappyFortuneService
 	
-	@Bean
+	/*@Bean
 	public FortuneService happyFortuneService() {
 		return new HappyFortuneService();
+	}*/
+	
+	@Bean
+	public FortuneService fortuneService() {
+		return new FortuneServiceImpl();
 	}
 	
 	//define bean for our SwimCoach and inject dependency
 	@Bean 
 	public Coach swimCoach() {
-		return new SwimCoach(happyFortuneService());
+		return new SwimCoach(fortuneService());
 	}
 }

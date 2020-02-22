@@ -25,9 +25,12 @@
  		<property name="bikeDetailsList">
  			<list>
  				<value>Honda</value>
+ 				<value>Apache</value>
  			</list>
  		</property>
  	</bean>
+ 	
+ <!-- 	merge=true merges child elements with parent elements if its false then child elements overrides parent elements -->
  	
  	<bean id="bike" class="com.sk.beans.BikeApp"  parent="bikeParent">
  		<property name="bikeDetailsList">

@@ -19,6 +19,15 @@
 
 	<bean id="dbdetails" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location" value="com/sk/commons/DBDetails.properties"/>
+		<!-- 
+		always use below tag when using "PropertyPlaceholderConfigurer" it tells spring container to ignore
+		unresolved dependency suppose 
+		service module has separate config uses separate properties file, same with DAO module.
+		if service module loaded first then for DAO module spring container can't find its config and throws
+		exception unable to resolve the dependency so to resolve this place below tag with every 
+		"PropertyPlaceholderConfigurer" 
+		-->
+		<property name="ignoreUnresolvablePlaceholders" value="true"/>
 	</bean> 
 	
 	<bean id="drds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

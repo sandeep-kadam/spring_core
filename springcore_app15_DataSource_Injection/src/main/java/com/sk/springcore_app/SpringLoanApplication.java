@@ -14,7 +14,7 @@ public class SpringLoanApplication {
 		
 		LoanService service = beanFactory.getBean("service",LoanService.class);
 		
-		float interestAmt = service.calculateInterestAmt(1000, "Sandeep", 9000, 10, 2);
+		float interestAmt = service.calculateInterestAmt(10, "sandy", 670, 30, 4);
 		
 		System.out.println("Interest Amount :: " + interestAmt);
 		

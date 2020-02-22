@@ -26,7 +26,7 @@
  	<bean id="myCoach"
  		class="com.sk.springcore_app5.BaseballCoach" 
  		init-method="myInitMethod"
- 		destroy-method="myDestroyMethod">	
+ 		destroy-method="myDestroyMethod" scope="prototype">	
  		<!-- setup constructor injection -->
  		<constructor-arg ref="myFortune"/> 		
  	</bean>

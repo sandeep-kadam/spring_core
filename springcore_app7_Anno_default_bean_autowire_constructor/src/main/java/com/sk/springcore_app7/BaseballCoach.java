@@ -14,13 +14,14 @@ import org.springframework.stereotype.Component;
 //Here using default Bean ID 
 // Spring Takes MyClassName  as class name and myClassName as its default bean id.
 
-@Component("baseballCoach")
+@Component
 public class BaseballCoach implements Coach
 {
 	
 	
 	private FortuneService fortuneService;
 	
+	//this constructor-dependency automatically fulfilled by spring container i.e. by using @Autowired
 	@Autowired
 	public BaseballCoach(FortuneService thefortuneService) {
 		fortuneService = thefortuneService;

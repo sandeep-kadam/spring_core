@@ -1,5 +1,8 @@
 package com.sk.springcore_app6;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.stereotype.Component;
 
 /*
@@ -20,13 +23,14 @@ public class BaseballCoach implements Coach
 	}
 
 	//add an init method
-	
+	@PostConstruct
 	public void myInitMethod() {
 		System.out.println("My StartUp Initialization");
 	}
 	
 	//add a destroy method
 	
+	@PreDestroy
 	public void myDestroyMethod() {
 		System.out.println("Resource Releasing Destroy method");
 	}

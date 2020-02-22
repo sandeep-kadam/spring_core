@@ -7,12 +7,15 @@ public class BikeApp {
 	private String modelNo = "";
 	
 	public void setBrand(String brand) {
+		System.out.println("inside set brand");
 		this.brand = brand;
 	}
 	public void setEngineCC(String engineCC) {
+		System.out.println("inside set engine");
 		this.engineCC = engineCC;
 	}
 	public void setModelNo(String modelNo) {
+		System.out.println("inside set model");
 		this.modelNo = modelNo;
 	}
 	

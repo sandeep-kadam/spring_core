@@ -6,6 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 //@ComponentScan("com.sk.springcore_app12")
+//reading properties file through java config
 @PropertySource("classpath:sports.properties")
 public class ServiceConfig {
 

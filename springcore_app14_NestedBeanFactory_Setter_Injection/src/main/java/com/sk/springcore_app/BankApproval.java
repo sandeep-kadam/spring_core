@@ -13,6 +13,9 @@ public class BankApproval {
 	
 	public String getLoanApprovalStatus() {
 		
+		System.out.println("Loan Amt : "+loanApproveImpl.getLoanAmt());
+		System.out.println("Loan Id : "+loanApproveImpl.getLoanId());
+		System.out.println("");
 		if(loanApproveImpl.getLoanType().equalsIgnoreCase("Bike"))
 			return "Loan Approved Successfully";
 		else

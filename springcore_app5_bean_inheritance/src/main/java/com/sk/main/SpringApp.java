@@ -17,15 +17,4 @@ public class SpringApp {
 		beanFactory.close();
 	}
 
-	
-	/*Output for Constructor Injection :
-		
-		Cannot resolve reference to bean 'fobj' while setting constructor argument; 
-		nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: 
-		Error creating bean with name 'fobj': Requested bean is currently in creation: Is there an unresolvable circular reference?
-		
-		Solution:
-		1.use one setter and one constructor injection and call setter injection method in clientApp.
-		2.use two setter injection instead of constructor
-	*/
 }
