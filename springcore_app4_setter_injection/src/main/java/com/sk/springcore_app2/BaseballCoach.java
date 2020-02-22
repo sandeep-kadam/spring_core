@@ -10,6 +10,7 @@ public class BaseballCoach implements Coach
 	//define a private field for the dependency
 	private FortuneService fortuneService;
 	
+	//Test git command line
 	//define constructor dependency
 	public BaseballCoach(FortuneService theFortuneService) {
 		fortuneService = theFortuneService;
