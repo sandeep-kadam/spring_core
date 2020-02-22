@@ -19,7 +19,7 @@
 	
 	
     <!-- Define your beans here -->
-	<bean id="loan" class="com.sk.springcore_app.LoanApproveImpl">
+	<bean id="ploan" class="com.sk.springcore_app.LoanApproveImpl">
 		<property name="loanId" value="101"/>
 		<property name="loanType" value="car"/>
 		<property name="loanAmt" value="10000"/>

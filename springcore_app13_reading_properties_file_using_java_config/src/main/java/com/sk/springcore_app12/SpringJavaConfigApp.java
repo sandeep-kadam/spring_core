@@ -8,7 +8,7 @@ public class SpringJavaConfigApp
     {
     	
     	//load spring config file
-    	
+    	//--------------------------------------------------------------------------Reading Java Config class file---
     	AnnotationConfigApplicationContext beanFactory = new AnnotationConfigApplicationContext(ServiceConfig.class);
     	
     	//retrieve beans from spring container

@@ -10,6 +10,7 @@ public class First {
 	}*/
 	
 	public void setSecondObj(Second secondClassObj) {
+		System.out.println("inside First class setter");
 		this.secondClassObj = secondClassObj;
 	}
 	

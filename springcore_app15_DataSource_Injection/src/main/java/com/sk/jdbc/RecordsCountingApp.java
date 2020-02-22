@@ -13,7 +13,7 @@ public class RecordsCountingApp {
 	
 	public static void main(String[] args) throws Exception {
 		
-		InputStream io = new FileInputStream("src/com/sk/commons/DBDetails.properties");
+		InputStream io = new FileInputStream("src/main/java/com/sk/commons/DBDetails.properties");
 		Properties properties = new Properties();
 		properties.load(io);
 		
@@ -22,12 +22,13 @@ public class RecordsCountingApp {
 		
 		Statement stmt = con.createStatement();
 		
-		ResultSet rs  = stmt.executeQuery("select count(*) from student");
+		ResultSet rs  = stmt.executeQuery("select count(*) from bank_loan");
 		
 		int cnt=0;
 		
-		if(rs.next())
+		if(rs.next()) {
 			cnt=rs.getInt(1);
+		}
 		
 		System.out.println("Record Count :: "+cnt);
 		

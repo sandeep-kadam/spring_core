@@ -7,7 +7,7 @@ public class CustomFortuneService implements FortuneService {
 
 	@Override
 	public String getFortune() {
-		return "You are using custom implementation";
+		return "You are using CustomFortuneService";
 	}
 
 }

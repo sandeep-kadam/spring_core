@@ -21,6 +21,8 @@
 	
     <!-- Define your beans here -->
     
+    <!-- abstract field is used to stop instantiating of that bean class -->
+    
  	<bean id="bikeParent" class="com.sk.beans.BikeApp" abstract="true">
  		<property name="brand" value="Honda"/>
  		<property name="engineCC" value="160cc"/>
@@ -30,6 +32,7 @@
  		<property name="modelNo" value="honda Hornet"/>
  	</bean>
  	
+ 	<!-- bike 2 bean property overrides bike bean properties -->
  	<bean id="bike2" class="com.sk.beans.BikeApp" parent="bikeParent">
  		<property name="modelNo" value="honda unicorn"/>
  	</bean>

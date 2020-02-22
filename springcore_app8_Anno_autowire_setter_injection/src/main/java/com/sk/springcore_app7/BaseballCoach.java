@@ -15,6 +15,7 @@ public class BaseballCoach implements Coach
 		fortuneService = thefortuneService;
 	}*/
 	
+	//setter-dependency fulfilled by spring container
 	@Autowired
 	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;

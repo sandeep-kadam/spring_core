@@ -11,7 +11,7 @@ public class BaseballCoach implements Coach
 	//field Injection
 	// use @Qualifier(beanid) to solve multiple implementation classes for same interface
 	@Autowired
-	@Qualifier("customFortuneService")
+	//@Qualifier("databaseFortuneService")
 	private FortuneService fortuneService;
 	
 	
@@ -30,7 +30,8 @@ public class BaseballCoach implements Coach
 		this.fortuneService = fortuneService;
 	}*/
 	
-	/*@Autowired
+	/* Method Injection
+	 * @Autowired
 	public void myMethod(FortuneService fortuneService) {
 		System.out.println("inside myMethod() !!!");
 		this.fortuneService = fortuneService;

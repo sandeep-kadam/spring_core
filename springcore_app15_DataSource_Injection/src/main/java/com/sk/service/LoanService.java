@@ -23,6 +23,7 @@ public class LoanService {
 		customerBO.setIntramt(interestAmt);
 		
 		int result= loanDAO.insert(customerBO);
+		System.out.println("result inside calIntAmt :: "+result);
 		return interestAmt;
 		
 	}
