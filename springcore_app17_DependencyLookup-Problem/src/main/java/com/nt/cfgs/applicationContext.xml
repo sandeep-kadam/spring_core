@@ -6,6 +6,7 @@
  <bean id="engg"  class="com.nt.beans.Engine" />
  <bean id="viechle" class="com.nt.beans.Viechle">
      <property name="beanId"  >
+     <!-- idref indicates ref of inner bean -->
          <idref  bean="engg"/>
      </property>
  </bean>

@@ -22,12 +22,14 @@ public class RecordsCountingApp {
 		
 		Statement stmt = con.createStatement();
 		
-		ResultSet rs  = stmt.executeQuery("select count(*) from bank_loan");
+		ResultSet rs  = stmt.executeQuery("select * from bank_loan");
 		
 		int cnt=0;
 		
-		if(rs.next()) {
-			cnt=rs.getInt(1);
+		while(rs.next()) {
+			//cnt=rs.getInt(1);
+			cnt++;
+			System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getFloat(3)+" "+rs.getFloat(4));
 		}
 		
 		System.out.println("Record Count :: "+cnt);

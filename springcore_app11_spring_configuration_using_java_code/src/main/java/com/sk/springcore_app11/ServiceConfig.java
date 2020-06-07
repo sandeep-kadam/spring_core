@@ -7,5 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.sk.springcore_app11")
 public class ServiceConfig {
 
-	
+	/*
+	 * @Configuration indicates that its primary purpose is as a source of bean
+	 * definitions.*/
 }

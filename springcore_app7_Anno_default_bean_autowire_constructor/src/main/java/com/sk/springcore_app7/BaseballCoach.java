@@ -22,7 +22,9 @@ public class BaseballCoach implements Coach
 	private FortuneService fortuneService;
 	
 	//this constructor-dependency automatically fulfilled by spring container i.e. by using @Autowired
-	@Autowired
+	//@Autowired
+	// No need to specify @Autowired if only single class implements an interface
+	// Note : above thing is only applicable for constructor injection
 	public BaseballCoach(FortuneService thefortuneService) {
 		fortuneService = thefortuneService;
 	}

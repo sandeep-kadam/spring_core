@@ -16,12 +16,14 @@ public class ServiceConfig {
 	
 	@Bean
 	public FortuneService fortuneService() {
+		System.out.println("inside fortuneService() method");
 		return new FortuneServiceImpl();
 	}
 	
 	//define bean for our SwimCoach and inject dependency
 	@Bean 
 	public Coach swimCoach() {
+		System.out.println("inside swimCoach() method");
 		return new SwimCoach(fortuneService());
 	}
 }

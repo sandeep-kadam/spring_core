@@ -11,7 +11,6 @@ import org.springframework.context.annotation.PropertySource;
 public class ServiceConfig {
 
 	//define bean for our HappyFortuneService
-	
 	@Bean
 	public FortuneService happyFortuneService() {
 		return new HappyFortuneService();
